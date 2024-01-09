@@ -1,0 +1,46 @@
+
+login.2fa.one_time_security_code_screen.back_button = //${common_button}[@${identifier}='header-back']
+
+login.2fa.oneTimeSecurityCodeScreen.answerSecurityQuestionsInsteadLink = //*[@${identifier}='auth.twoFactorChallenge.securityQuestions']
+
+login.2fa.oneTimeSecurityCodeScreen.sendCodeButton = //${common_button}[@${identifier}='auth.twoFactorChallenge.continue']
+
+login.2fa.security_code_screen.back_button = ${login.2fa.one_time_security_code_screen.back_button}
+
+login.2fa.securityCodeScreen.yourCodeWasSentToText = //*[contains(@${text}, 'Your one-time security code was sent to')]
+
+login.2fa.securityCodeScreen.resendSecurityCodeLink = //*[@${identifier}='auth.validateOneTimePassword.refreshCode']
+
+login.2fa.security_code_screen.success_message = //*[contains(@${text}, 'Success!')]
+
+login.2fa.security_code_screen.wrong_code_message = //*[contains(@${text}, 'Your security code was not entered correctly') or contains(@${text}, "You've gone over the number of security code attempts you're allowed")][not(descendant::*)]
+
+login.2fa.security_code_screen.security_questions_link = //*[@${identifier}='auth.login.securityQuestions']
+
+login.2fa.security_code_screen.continue_button = //${common_button}[descendant-or-self::*[@${text}='Continue']]
+
+login.2fa.security_questions_screen.wrong_answers_message = //*[contains(@${text}, "We're sorry, but one or more of these answers is incorrect")]
+
+login.2fa.security_questions_screen.first_security_question = //*[@${identifier}='login.2fa.securityQuestionScreenQuestion0.questionText']
+
+login.2fa.security_questions_screen.first_security_question.question_text = ${login.2fa.security_questions_screen.first_security_question}
+
+login.2fa.security_questions_screen.first_security_question.textbox = //*[@${identifier}='login.2fa.securityQuestionScreen.question0.answerTextbox']
+
+login.2fa.security_questions_screen.second_security_question = //*[@${identifier}='login.2fa.securityQuestionScreenQuestion1.questionText']
+
+login.2fa.security_questions_screen.second_security_question.question_text = ${login.2fa.security_questions_screen.second_security_question}
+
+login.2fa.security_questions_screen.second_security_question.textbox = //*[@${identifier}='login.2fa.securityQuestionScreen.question1.answerTextbox']
+
+login.2fa.security_questions_screen.third_security_question = //*[@${identifier}='login.2fa.securityQuestionScreenQuestion2.questionText']
+
+login.2fa.security_questions_screen.third_security_question.question_text = ${login.2fa.security_questions_screen.third_security_question}
+
+login.2fa.security_questions_screen.third_security_question.textbox = //*[@${identifier}='login.2fa.securityQuestionScreen.question2.answerTextbox']
+
+login.2fa.securityQuestionsScreen.radioOption.doNotRememberMyDevice = //*[@${identifier}='radio:It is a public device or I do not use it regularly, so I will need a security code next time I sign in from this device.']
+
+login.2fa.security_questions_screen.continue_button =  //${common_button}[descendant-or-self::*[@${text}='Continue']]
+
+login.2fa.security_questions_screen.cancel_button = (//${common_button}[descendant-or-self::*[@${text}='Cancel']])[last()]
